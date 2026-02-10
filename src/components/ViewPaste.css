@@ -1,0 +1,101 @@
+/* Container & Layout */
+.view-paste-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.view-paste-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Disabled Title Input */
+.view-title-input {
+  width: 100%;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: #f9f9f9; /* Light grey to show disabled status */
+  cursor: not-allowed;
+}
+
+/* Editor Style Box */
+.view-editor-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid rgba(128, 121, 121, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(40px);
+}
+
+.view-editor-header {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(128, 121, 121, 0.3);
+}
+
+.dot-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.dot-red { background: rgb(255, 95, 87); }
+.dot-yellow { background: rgb(254, 188, 46); }
+.dot-green { background: rgb(45, 200, 66); }
+
+.copy-btn-wrapper {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.copy-btn:hover {
+  color: #10b981; /* Success green */
+}
+
+/* Disabled Textarea */
+.view-textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  resize: none; /* View page pe resize ki zaroorat nahi */
+  background: transparent;
+  caret-color: #000;
+  font-family: inherit;
+  cursor: not-allowed;
+}
